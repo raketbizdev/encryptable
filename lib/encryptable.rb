@@ -1,8 +1,20 @@
-# frozen_string_literal: true
-
-require_relative "encryptable/version"
+require 'encryptable/cipher'
+require 'encryptable/configuration'
 
 module Encryptable
-  class Error < StandardError; end
-  # Your code goes here...
+  class << self
+    attr_writer :configuration
+  end
+
+  def self.configuration
+    @configuration ||= Configuration.new
+  end
+
+  def self.configure
+    yield(configuration)
+  end
+
+  def self.cipher
+    Cipher.new(key: configuration.key, iv: configuration.iv)
+  end
 end

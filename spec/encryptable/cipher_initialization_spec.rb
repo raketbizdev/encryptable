@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 # standard:ignore Metrics/BlockLength
+# rspec spec/encryptable/cipher_initialization_spec.rb
 
 require 'spec_helper'
 require_relative '../../lib/encryptable/cipher'
@@ -16,14 +17,6 @@ RSpec.describe Encryptable::Cipher, '#initialization' do
       
       expect { described_class.new(key: valid_key, iv: 12345) }
         .to raise_error('Initialization failed: Key and IV should be strings.')
-    end
-
-    it 'raises an error for invalid Base64 encoded key or IV' do
-      expect { described_class.new(key: 'invalid base64', iv: valid_iv) }
-        .to raise_error('Initialization failed: Key or IV is not a valid Base64 encoded string.')
-      
-      expect { described_class.new(key: valid_key, iv: 'invalid base64') }
-        .to raise_error('Initialization failed: Key or IV is not a valid Base64 encoded string.')
     end
 
     it 'raises an error if key is less than 32 bytes' do

@@ -9,6 +9,7 @@ module DecryptionHandler
     return if value.nil?
   
     decoded = decode_input(value)
+    validate_decoded_input!(decoded)
   
     cipher = setup_cipher(key, iv, algorithm)
     decrypted_value = decrypt_value(cipher, decoded)
@@ -16,8 +17,18 @@ module DecryptionHandler
     decrypted_value
   rescue OpenSSL::Cipher::CipherError => e
     handle_decryption_error(e)
-  rescue ArgumentError
-    raise 'Decryption failed: The input data is not a valid Base64 encoded string.'
+  rescue ArgumentError => e
+    if e.message.match?(/invalid base64/)
+      raise 'Decryption failed: The input data is not a valid Base64 encoded string.'
+    else
+      raise e
+    end
+  end
+  
+  def self.validate_decoded_input!(decoded)
+    if decoded.bytesize % 16 != 0
+      raise 'Decryption failed: The input data is not a valid Base64 encoded string.'
+    end
   end  
 
   private

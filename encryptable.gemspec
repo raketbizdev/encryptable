@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = ["radon1284@yahoo.com"]
 
   spec.summary = "A simple encryption and decryption library for Ruby on Rails applications."
-  spec.description = "The Encryptable gem provides an easy-to-use module for encrypting and decrypting data in Ruby on Rails applications. It utilizes the AES-256-CBC encryption method from the OpenSSL library."
+  spec.description = "Encryptable is a lightweight and versatile Ruby gem crafted to provide seamless encryption and decryption functionalities. Whether you're building a standalone Ruby application or a Rails-powered web service, Encryptable allows you to maintain the confidentiality of your data with ease."
   spec.homepage = "https://github.com/raketbizdev/encryptable" # Replace with your actual repository URL
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"

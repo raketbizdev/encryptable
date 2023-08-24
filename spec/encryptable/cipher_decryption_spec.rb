@@ -9,7 +9,7 @@ require_relative '../support/key_iv_helper'
 
 RSpec.describe DecryptionHandler, '.decrypt' do
   include KeyIvHelper
-  
+
   let(:generated_key_iv) { generate_key_iv() }
   let(:key) { generated_key_iv[0] }
   let(:iv) { generated_key_iv[1] }
@@ -18,8 +18,8 @@ RSpec.describe DecryptionHandler, '.decrypt' do
   let(:plaintext) { "Hello, world!" }
   let(:encrypted_value) { encrypt_sample_value(plaintext, decoded_key, decoded_iv, algorithm) }
 
-  let(:decoded_key) { Base64.decode64(generated_key_iv[0]) }
-  let(:decoded_iv) { Base64.decode64(generated_key_iv[1]) }
+  let(:decoded_key) { Base64.decode64(key) }
+  let(:decoded_iv) { Base64.decode64(iv) }
 
   describe 'successful decryption' do
     it 'decrypts an encrypted value' do

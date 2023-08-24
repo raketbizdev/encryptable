@@ -1,3 +1,13 @@
 # For available configuration options, see:
 #   https://github.com/testdouble/standard
 ruby_version: 2.6
+
+inherit_gem:
+  standard: config/base.yml
+Style/StringLiterals:
+  Enabled: false
+AllCops:
+  Exclude:
+    - "spec/**/*"
+Metrics/BlockLength:
+  Max: 100

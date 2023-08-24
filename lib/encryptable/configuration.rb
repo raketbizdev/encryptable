@@ -3,8 +3,8 @@ module Encryptable
     attr_accessor :key, :iv
 
     def initialize
-      @key = nil
-      @iv = nil
+      @key_length = 32
+      @iv_length = 16
     end
   end
 end

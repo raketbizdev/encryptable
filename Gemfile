@@ -8,11 +8,11 @@ gemspec
 # Development and Testing Dependencies
 group :development, :test do
   gem "rake", "~> 13.0"
-  gem "rspec", "~> 3.0"
+  gem "rspec", "~> 3.4"
   gem "standard", "~> 1.3"
 end
 
 # Runtime Dependencies
 
-gem 'openssl', '~> 3.1'
-gem 'base64', '~> 0.1.1'
+gem "openssl", "~> 3.1"
+gem "base64", "~> 0.1.1"

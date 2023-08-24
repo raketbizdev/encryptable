@@ -1,5 +1,5 @@
-require 'encryptable/cipher'
-require 'encryptable/configuration'
+require "encryptable/cipher"
+require "encryptable/configuration"
 
 module Encryptable
   class << self
@@ -15,6 +15,9 @@ module Encryptable
   end
 
   def self.cipher
-    Cipher.new(key: configuration.key, iv: configuration.iv)
+    Cipher.new(
+      key: configuration.key,
+      iv: configuration.iv
+    )
   end
 end

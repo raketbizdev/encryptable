@@ -4,15 +4,15 @@
 
 ### Features:
 
-- **`AES-256-CBC Algorithm:`** By default, Encryptable uses the robust and widely recognized AES-256-CBC encryption algorithm, ensuring that your data remains secure.
+- **AES-256-CBC Algorithm:** By default, Encryptable uses the robust and widely recognized AES-256-CBC encryption algorithm, ensuring that your data remains secure.
 
-- **`Base64 Encoding:`** After encryption, the data is encoded in Base64 format, making it easier to store in databases or transmit over networks.
+- **Base64 Encoding:** After encryption, the data is encoded in Base64 format, making it easier to store in databases or transmit over networks.
 
-- **`Customizable Key and IV:`** While the gem provides methods to generate secure keys and initialization vectors (IVs), users can also provide their own to tailor the encryption process to their needs.
+- **Customizable Key and IV:** While the gem provides methods to generate secure keys and initialization vectors (IVs), users can also provide their own to tailor the encryption process to their needs.
 
-- **`Error Handling:`** Transparent error messages are provided for common issues such as invalid Base64 strings or incorrect key/IV lengths, making debugging a breeze.
+- **Error Handling:** Transparent error messages are provided for common issues such as invalid Base64 strings or incorrect key/IV lengths, making debugging a breeze.
 
-- **`Rails Integration:`** Easily integrate **`Encryptable`** with Rails models to encrypt sensitive attributes before storing them in your database.
+- **Rails Integration:** Easily integrate **Encryptable** with Rails models to encrypt sensitive attributes before storing them in your database.
 
 Whether you're looking to securely store user passwords, encrypt sensitive configuration data, or simply want an easy-to-use encryption tool, Encryptable has got you covered!
 

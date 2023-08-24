@@ -1,46 +1,20 @@
 # Encryptable
 
-The `Encryptable` gem provides an easy-to-use module for encrypting and decrypting data in Ruby on Rails applications. It utilizes the AES-256-CBC encryption method from the OpenSSL library.
+`Encryptable` is a lightweight and versatile Ruby gem crafted to provide seamless encryption and decryption functionalities. Whether you're building a standalone Ruby application or a Rails-powered web service, Encryptable allows you to maintain the confidentiality of your data with ease.
 
-## Installation
+### Features:
 
-### Introduction
+- **`AES-256-CBC Algorithm:`** By default, Encryptable uses the robust and widely recognized AES-256-CBC encryption algorithm, ensuring that your data remains secure.
 
-The `Encryptable` gem offers seamless integration for encryption and decryption functionalities within Ruby on Rails applications. Leveraging the robustness of the AES-256-CBC encryption method from the OpenSSL library, `Encryptable` ensures that your application's sensitive data remains secure. Below are the steps to get you started with the installation process.
+- **`Base64 Encoding:`** After encryption, the data is encoded in Base64 format, making it easier to store in databases or transmit over networks.
 
-### Step-by-Step Guide
+- **`Customizable Key and IV:`** While the gem provides methods to generate secure keys and initialization vectors (IVs), users can also provide their own to tailor the encryption process to their needs.
 
-1. **Add the Gem to Your Gemfile**:
+- **`Error Handling:`** Transparent error messages are provided for common issues such as invalid Base64 strings or incorrect key/IV lengths, making debugging a breeze.
 
-   Integrate the `encryptable` gem into your Rails application by adding the following line to your application's Gemfile:
+- **`Rails Integration:`** Easily integrate **`Encryptable`** with Rails models to encrypt sensitive attributes before storing them in your database.
 
-   ```
-   gem 'encryptable', git: 'https://github.com/raketbizdev/encryptable.git'
-   ```
-
-2. **Install the Gem**:
-
-   After adding the gem to your Gemfile, install it using Bundler. Run the following command in your terminal:
-
-   ```
-   $ bundle install
-   ```
-
-3. **Configuration (Optional)**:
-
-   If the gem requires specific configurations, such as setting up an encryption key or an initialization vector (IV), you might need to do so in an initializer. For instance, you can create an initializer in `config/initializers/encryptable.rb` and add the necessary configurations there.
-
-   Note: Always ensure that sensitive configuration values, like encryption keys, are stored securely using environment variables or encrypted credentials, and are never hard-coded or checked into version control.
-
-### Verification
-
-To verify that the gem has been installed correctly, you can run the following command:
-
-```
-$ bundle list | grep encryptable
-```
-
-If the gem is installed successfully, this command will display its version and confirm its presence in your bundle.
+Whether you're looking to securely store user passwords, encrypt sensitive configuration data, or simply want an easy-to-use encryption tool, Encryptable has got you covered!
 
 ## Usage
 

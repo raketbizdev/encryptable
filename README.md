@@ -1,6 +1,6 @@
 # Encryptable
 
-`Encryptable` is a lightweight and versatile Ruby gem crafted to provide seamless encryption and decryption functionalities. Whether you're building a standalone Ruby application or a Rails-powered web service, Encryptable allows you to maintain the confidentiality of your data with ease.
+**Encryptable** is a lightweight and versatile Ruby gem crafted to provide seamless encryption and decryption functionalities. Whether you're building a standalone Ruby application or a Rails-powered web service, Encryptable allows you to maintain the confidentiality of your data with ease.
 
 ### Features:
 

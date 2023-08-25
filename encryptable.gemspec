@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors = ["raketbizdev"]
   spec.email = ["radon1284@yahoo.com"]
 
-  spec.summary = "Encryption and decryption toolkit for Rails."
+  spec.summary = "A simple encryption and decryption library for Ruby  and Ruby on Rails applications."
   spec.description = "Encryptable is a lightweight and versatile Ruby gem crafted to provide seamless encryption and decryption functionalities. Whether you're building a standalone Ruby application or a Rails-powered web service, Encryptable allows you to maintain the confidentiality of your data with ease."
   spec.homepage = "https://github.com/raketbizdev/encryptable" # Replace with your actual repository URL
   spec.license = "MIT"
@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.metadata["allowed_push_host"] = "https://rubygems.org" # Default RubyGems server
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/raketbizdev/encryptable" # Replace with your actual repository URL
-  spec.metadata["changelog_uri"] = "https://github.com/raketbizdev/encryptable/CHANGELOG.md" # If you maintain a CHANGELOG.md file
+  spec.metadata["changelog_uri"] = "https://github.com/raketbizdev/encryptable/blob/main/CHANGELOG.md" # If you maintain a CHANGELOG.md file
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

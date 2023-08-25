@@ -2,6 +2,31 @@
 
 - Your upcoming changes that haven't been released yet.
 
+## [0.1.2] - 2023-08-24
+
+### Added
+
+- No changes
+
+### Changed
+
+- Updated gem summary for clarity and detail.
+- Removed remnants of the gem version.
+
+### Deprecated
+
+- No changes
+
+### Removed
+
+- No changes
+
+### Fixed
+
+- No changes
+
+### Security
+
 ## [0.1.1] - 2023-08-24
 
 ### Added

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    encryptable (0.1.0)
+    encryptable (0.1.2)
 
 GEM
   remote: https://rubygems.org/
